@@ -12,7 +12,7 @@ function Layout() {
       </div>
       <div className="container">
         <div className="header border-b-5 border-blue-400">
-          <h2>My Header</h2>
+          <h2 className="text-center">My Header</h2>
         </div>
         <div className="overview flex border-b-5 border-blue-400 justify-around">
           <div className="overview-item">

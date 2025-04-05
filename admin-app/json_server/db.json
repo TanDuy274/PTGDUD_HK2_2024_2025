@@ -1,0 +1,25 @@
+{
+    "overview": [
+        {
+            "id": 1,
+            "name": "Turnover",
+            "value": "92,405",
+            "percentage": "5.39",
+            "icon": "../../../src/assets/images/Button 1509.png"
+        },
+        {
+            "id": 2,
+            "name": "Profit",
+            "value": "32,218",
+            "percentage": "5.39",
+            "icon": "../../../src/assets/images/Button 1529.png"
+        },
+        {
+            "id": 3,
+            "name": "New customer",
+            "value": "298",
+            "percentage": "6.84",
+            "icon": "../../../src/assets/images/Button 1530.png"
+        }
+    ]
+}
