@@ -9,7 +9,7 @@ function CustomerTable({ customers }) {
   useEffect(() => {
     const table = $(tableRef.current).DataTable({
       destroy: true,
-      columnDefs: [{ orderable: false, targets: [0, -1, -2] }],
+      columnDefs: [{ orderable: false, targets: "_all" }],
     });
 
     $("#select-all").on("click", function () {

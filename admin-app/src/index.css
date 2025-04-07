@@ -68,3 +68,7 @@ button:focus-visible {
 } */
 
 @import "tailwindcss";
+
+#root {
+  height: 100vh;
+}

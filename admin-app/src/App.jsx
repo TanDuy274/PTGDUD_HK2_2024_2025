@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import CustomerTable from "./components/CustomerTable/CustomerTable";
 import Overview from "./components/Overview/Overview";
+import Menu from "./components/Menu/Menu";
 
 function App() {
   const OVERVIEW_URL = "http://localhost:3000/overview";
@@ -49,9 +50,11 @@ function App() {
 
   return (
     <>
-      <Overview overviewData={overviewData} />
+      {/* <Overview overviewData={overviewData} />
 
-      <CustomerTable customers={customersData} />
+      <CustomerTable customers={customersData} /> */}
+
+      <Menu />
     </>
   );
 }

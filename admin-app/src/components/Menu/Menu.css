@@ -1,0 +1,19 @@
+/* li a.active {
+    background-color: #f34b87;
+    color: white;
+} */
+
+.item-link {
+  transition: all 0.3s ease;
+}
+
+.item-link:hover {
+  background-color: #f1f5f9; /* hover nhẹ */
+  transform: scale(1.02);
+}
+
+.item-link.active {
+  background-color: #f34b87; /* màu khi active */
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
