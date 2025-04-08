@@ -14,10 +14,7 @@ function Menu() {
       </div>
       <div className="flex flex-col justify-between flex-1 overflow-hidden">
         <ul className="items">
-          <li
-            className="item"
-            // style={activeStyle}
-          >
+          <li className="item">
             <NavLink
               href="#"
               className="item-link flex pl-[18px] p-2 m-2 rounded-[10px]"
