@@ -1,0 +1,7 @@
+p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+li > p {
+    font-family: Arial, Helvetica, sans-serif;
+}

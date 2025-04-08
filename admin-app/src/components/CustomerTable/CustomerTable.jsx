@@ -11,7 +11,10 @@ function CustomerTable({ customers }) {
   useEffect(() => {
     const table = $(tableRef.current).DataTable({
       destroy: true,
-      columnDefs: [{ orderable: false, targets: "_all" }],
+      columnDefs: [
+        { orderable: false, targets: "_all" },
+        { className: "dt-center", targets: 5 },
+      ],
     });
 
     $("#select-all").on("click", function () {
@@ -29,7 +32,6 @@ function CustomerTable({ customers }) {
 
   const handleSave = (updatedCustomer) => {
     console.log("Saved customer:", updatedCustomer);
-    // Gọi API hoặc cập nhật state cha ở đây nếu muốn
   };
 
   return (
@@ -44,7 +46,7 @@ function CustomerTable({ customers }) {
             <th>COMPANY</th>
             <th>ORDER VALUE</th>
             <th>ORDER DATE</th>
-            <th>STATUS</th>
+            <th className="text-center">STATUS</th>
             <th></th>
           </tr>
         </thead>
@@ -73,7 +75,24 @@ function CustomerTable({ customers }) {
               <td>{customer.company}</td>
               <td>${customer.orderValue}</td>
               <td>{customer.orderDate}</td>
-              <td>{customer.status}</td>
+              <td className="text-center">
+                <span
+                  className={`px-3 py-1 rounded-full text-sm font-medium
+                    ${
+                      customer.status === "New"
+                        ? "bg-blue-100 text-blue-600"
+                        : customer.status === "In-progress"
+                        ? "bg-yellow-100 text-yellow-700"
+                        : customer.status === "Completed"
+                        ? "bg-green-100 text-green-700"
+                        : "bg-gray-100 text-gray-500"
+                    }
+                  `}
+                >
+                  {customer.status.charAt(0).toUpperCase() +
+                    customer.status.slice(1)}
+                </span>
+              </td>
               <td>
                 <img
                   src="../../../src/assets/images/create.png"
