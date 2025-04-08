@@ -4,6 +4,7 @@ import OverviewItem from "./components/OverviewItem/OverviewItem";
 import $ from "jquery";
 import "datatables.net-dt";
 import "datatables.net-dt/css/dataTables.dataTables.min.css";
+<<<<<<< HEAD
 
 function App() {
   const OVERVIEW_URL = "http://localhost:3000/overview";
@@ -92,6 +93,20 @@ function App() {
         <Route path="/messages" element={<Layout />} />
         <Route path="/integrations" element={<Layout />} />
       </Routes>
+=======
+import { Navigate, Route, Routes } from "react-router";
+import "./App.css";
+import Layout from "./layout/Layout";
+
+function App() {
+  return (
+    <>
+      <Layout />
+      <Routes>
+        <Route path="/" element={<Navigate to="/dashboard" replace />} />
+      </Routes>
+      {/* <Header /> */}
+>>>>>>> 4981402 (modal + connect api)
     </>
   );
 }

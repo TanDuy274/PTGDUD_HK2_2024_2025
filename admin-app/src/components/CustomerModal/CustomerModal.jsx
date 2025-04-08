@@ -142,7 +142,6 @@ function CustomerModal({ customer, onClose, onSave }) {
               className="border px-2 py-1 w-full rounded"
             />
           </label>
-
           <label>
             Order Value:
             <input
@@ -153,7 +152,6 @@ function CustomerModal({ customer, onClose, onSave }) {
               className="border px-2 py-1 w-full rounded"
             />
           </label>
-
           <label>
             Order Date:
             <input
